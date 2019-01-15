@@ -2,8 +2,7 @@ const assert = require('assert');
 const DFA = require('./dfa');
 const NFA = require('./nfa');
 
-const tests = require('./tests.js')
-// .filter(machine => machine.type === 'nfa');
+const tests = require('./testcases.js')
 
 const createMachine = (type, tuple) => {
   const machine = { dfa: DFA, nfa: NFA };
